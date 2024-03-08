@@ -3,6 +3,33 @@
 <html lang="en">
 <style>
 
+.image-wrap{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+h1,h2,h3,h4,h5{
+  text-align: center;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: flex-top;
+  padding-top: 1vh;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  width: 100%; 
+  background: blue;
+  height: 7vh;
+}
+
+.nav-link{
+  font-size: 30px;
+  margin: 10px;
+}
+
 </style>
 
   <head>
@@ -13,6 +40,7 @@
   <body>
     <main>
         <header>
+          <h1></h1>
           <h1>Dog Image Page!</h1>
           <div class="nav-bar">
             <nav id="navbar">
@@ -22,6 +50,15 @@
             </nav>
           </div>
         </header> 
-        <div class="image-wrap"><img alt="puppy running" src="https://www.dogsbestfriendtraining.com/wp-content/uploads/2021/04/iStock-1184654849-1.jpg"></div></div>
-    </main>
+        <section id="dogs-on-backs">
+        <div class="image-wrap"><img alt="dog on back" src="https://www.thesprucepets.com/thmb/GwsJyuDMz44544tZO1jSkzVy9Ng=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/why-dogs-like-belly-rubs-4584399-hero-27e23577c3f748de8dc5c4233687ddb7.jpg"></div>
+        <p>The Spruce / Adrienne Legault</p>
+        </section>
+        <section id="dog-pets">
+        <div class="image-wrap"><img alt="dog pet" src="https://petkeen.com/wp-content/uploads/2021/12/happy-golden-retriever_archimede_Shutterstock-e1669994406524.jpg"></div>
+        </section>
+        <section id="dogs-running">
+        <div class="image-wrap"><img alt="puppy running" src="https://www.dogsbestfriendtraining.com/wp-content/uploads/2021/04/iStock-1184654849-1.jpg"></div>
+        </section>
+      </main>
   </body>

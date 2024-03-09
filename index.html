@@ -3,7 +3,7 @@
 <html lang="en">
 <style>
 
-.section{
+section{
   margin: 5vh;
   padding: 5vh;
 }
@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,a{
   text-align: center;
 }
 
@@ -26,13 +26,17 @@ h1,h2,h3,h4,h5{
   z-index: 998;
   top: 0;
   width: 100%; 
-  background: blue;
-  height: 7vh;
+  background: purple;
+  height: 8vh;
 }
 
-.nav-link{
-  font-size: 30px;
+a{
+  font-size: 20px;
   margin: 10px;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  justify-content: center;
 }
 
 *{
@@ -52,6 +56,15 @@ h1,h2,h3,h4,h5{
   vertical-align: center;
 }
 
+.title{
+  padding: 8vh;
+}
+
+.headerl{
+  justify-content: center;
+
+}
+
 </style>
 
   <head>
@@ -61,14 +74,23 @@ h1,h2,h3,h4,h5{
   <body>
     <main>
         <header>
-          <h1></h1>
-          <h1>Dog Image Page!</h1>
+          <div class="title">
+            <h1>Dog Image Page!</h1>
+          </div>
           <div class="nav-bar">
             <nav id="navbar">
-            <a class="nav-link" href="#dogs-on-backs">Dogs On Their Backs!</a>
-            <a class="nav-link" href="#dog-pets">Dogs Being Pet!</a>
-            <a class="nav-link" href="#dogs-running">Dogs Running!</a>
-            </nav>
+            <div class="row headerl">
+            <div class="col-xs-4">
+            <a class="nav-link" href="#dogs-on-backs">Dog On Its Back!</a>
+            </div>
+            <div class="col-xs-4">
+            <a class="nav-link" href="#dog-pets">Dog Being Pet!</a>
+            </div>
+            <div class="col-xs-4">
+            <a class="nav-link" href="#dogs-running">Dog Running!</a>
+            </div>
+            </div>
+          </nav>
           </div>
         </header> 
         <section id="dogs-on-backs">
